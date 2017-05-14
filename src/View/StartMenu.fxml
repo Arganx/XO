@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.StartMenuController">
+   <children>
+      <Button fx:id="next" layoutX="346.0" layoutY="177.0" mnemonicParsing="false" onAction="#nextPressed" text="Next" />
+      <RadioButton fx:id="client" layoutX="233.0" layoutY="192.0" mnemonicParsing="false" onAction="#clientSelected" text="Client" />
+      <RadioButton fx:id="host" layoutX="233.0" layoutY="172.0" mnemonicParsing="false" onAction="#hostSelected" text="Host" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="5.0" layoutY="34.0" prefHeight="81.0" prefWidth="590.0" text="Tic-tac-toe" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+         <font>
+            <Font size="55.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="o" layoutX="233.0" layoutY="247.0" mnemonicParsing="false" onAction="#oSelected" text="O" />
+      <RadioButton layoutX="233.0" layoutY="264.0" mnemonicParsing="false" onAction="#xSelected" text="X" fx:id="x" />
+      <Label layoutX="233.0" layoutY="230.0" text="What do you want to play as: (only host can choose)" />
+      <TextField fx:id="id_text" layoutX="436.0" layoutY="297.0" />
+      <Label layoutX="228.0" layoutY="301.0" text="Id: (if empty local host will by selected)" />
+   </children>
+</AnchorPane>
